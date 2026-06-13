@@ -36,7 +36,6 @@ export default function FlashcardsGamePage() {
 
   const next = () => {
     if (current < cards.length - 1) { setCurrent(c => c + 1); setFlipped(false) }
-    if (current + 1 === cards.length) playVictory()
   }
   const prev = () => {
     if (current > 0) { setCurrent(c => c - 1); setFlipped(false) }
